@@ -8,27 +8,27 @@
 <link rel="import" href="input-autocomplete-behavior.html">
 
 <dom-module id="paper-input-autocomplete">
-  <style>
-    :host {
-      display: block;
-    }
-    
-    paper-material{
-      left:0;
-      right:0;
-      position: absolute;
-      z-index: 10; 
-    }
-    
-    paper-item{
-      cursor: pointer;
-    }
-    
-    .iron-selected{
-      background: #E0E0E0;
-    }
-  </style>
   <template>
+	  <style>
+		  :host {
+			  display: block;
+		  }
+
+		  paper-material{
+			  left:0;
+			  right:0;
+			  position: absolute;
+			  z-index: 10;
+		  }
+
+		  paper-item{
+			  cursor: pointer;
+		  }
+
+		  .iron-selected{
+			  background: #E0E0E0;
+		  }
+	  </style>
     <template is="dom-if" if="{{label}}">
      <h3>{{label}}</h3> 
     </template>
